@@ -1,0 +1,12 @@
+Willkommen {{ name }}!
+
+<hgroup>
+
+    <h2>Willkommen</h2>
+</hgroup>
+
+{% for article in allArticles %}
+    <article>
+        <h3>{{ article.getTitle() }}</h3>
+    </article>
+{%  endfor %}

@@ -1,0 +1,20 @@
+BlogMe\BlogMeBundle\Entity\Article:
+    type: entity
+    table: null
+    repositoryClass: BlogMe\BlogMeBundle\Entity\ArticleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '50'
+        subtitle:
+            type: string
+            length: '80'
+        message:
+            type: text
+    lifecycleCallbacks: {  }
